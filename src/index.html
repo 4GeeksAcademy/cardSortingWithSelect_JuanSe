@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid border border-primary p-3">
+      <div class="input-group mb-3" id="userControls">
+        <h4 class="text-light me-3">Original</h4>
+        <div class="col-auto">
+          <input type="number" class="form-control border border-radius" placeholder="Enter a number" id="cardsAmount" />
+        </div>
+        <button id="draw" class="btn btn-primary ms-2" >Draw</button>
+        <button id="sort" class="btn btn-secondary ms-2">Sort</button>
+      </div>
+      <div class="border border-danger p-3">
+        <div class="card text-center">
+          <span class="top-suit text-start suitValue"></span>
+          <h1 class="card-value" id="cardValue"></h1>
+          <span class="bottom-suit text-end suitValue"></span>
+        </div>
       </div>
     </div>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

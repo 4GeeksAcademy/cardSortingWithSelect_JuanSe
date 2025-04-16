@@ -1,5 +1,23 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: #3F612D;
 }
+
+.card {
+    width: 18rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+  .top-suit, .bottom-suit {
+    font-size: 4rem;
+  }
+  .card-value {
+    font-size: 5rem;
+    font-weight: bold;
+  }
