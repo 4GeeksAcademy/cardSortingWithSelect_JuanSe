@@ -11,20 +11,30 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container-fluid border border-primary p-3">
+    <div class="container-fluid p-3">
       <div class="input-group mb-3" id="userControls">
         <h4 class="text-light me-3">Original</h4>
         <div class="col-auto">
           <input type="number" class="form-control border border-radius" placeholder="Enter a number" id="cardsAmount" />
         </div>
         <button id="draw" class="btn btn-primary ms-2" >Draw</button>
-        <button id="sort" class="btn btn-secondary ms-2">Sort</button>
+        <button id="sortB" class="btn btn-secondary ms-2">Sort by Bubble Sort</button>
+        <button id="sortS" class="btn btn-secondary ms-2">Sort by Selection Sort</button>
+        <button id="clear" class="btn btn-danger ms-2">Clear</button>
       </div>
-      <div class="border border-danger p-3">
-        <div class="card text-center">
-          <span class="top-suit text-start suitValue"></span>
-          <h1 class="card-value" id="cardValue"></h1>
-          <span class="bottom-suit text-end suitValue"></span>
+      <div class=" p-3">
+        <div id="cards" class="row">
+
+        </div>
+        <div id="sortingSection" class="row">
+          <h4 class="text-light me-3 mt-3"> Sorted with Bubble sort</h4>
+          <ul id="sortingListBubble" class="list-group list-group-flush ">
+
+          </ul>
+          <h4 class="text-light me-3 mt-3"> Sorted with Selection sort</h4>
+          <ul id="sortingListSelect" class="list-group list-group-flush">
+
+          </ul>
         </div>
       </div>
     </div>

@@ -1,23 +1,25 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
     background: #3F612D;
 }
 
 .card {
-    width: 18rem;
-    height: 25rem;
+    width: 4.5rem; /* 1/4 de 18rem */
+    height: 6.25rem; /* 1/4 de 25rem */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.25rem; /* Ajustar padding proporcionalmente */
     border: 1px solid #000;
     border-radius: 10px;
-  }
-  .top-suit, .bottom-suit {
-    font-size: 4rem;
-  }
-  .card-value {
-    font-size: 5rem;
+}
+
+.top-suit, .bottom-suit {
+    font-size: 1rem; /* 1/4 de 4rem */
+}
+
+.card-value {
+    font-size: 1.25rem; /* 1/4 de 5rem */
     font-weight: bold;
-  }
+}
